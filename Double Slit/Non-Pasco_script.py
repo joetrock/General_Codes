@@ -24,7 +24,7 @@ plt.show()
 t2 = data2[200:,0]
 dis2 = (t2/(6.4*0.5))-13.5
 I2 = data2[200:,1]
-t3 = data3[200:,0]
+t3 = data3[201:,0]
 dis3 = (t3/(6.4*0.5))-13.5
 I3 = data3[200:,1]
 
@@ -38,12 +38,18 @@ N2 = round(len(s2)/10)
 s2[N2:len(s2)] = 0
 slit2 = np.fft.irfft(s2)
 
+# Changing Y axis to % of max intensity
+max1 = np.max(slit1)
+slit1 = (slit1/max1) *100
+max2 = np.max(slit2)
+slit2 = (slit2/max2) *100
+
 # Plotting single slits
 plt.plot(dis2,slit1,label="Left")
 plt.plot(dis3,slit2,label="Right")
 plt.legend()
 plt.xlabel("Distance (mm)")
-plt.ylabel("Intensity")
+plt.ylabel("% of Max Intensity")
 plt.title("Single Slits")
 plt.grid()
 plt.show()
