@@ -34,7 +34,7 @@ N1 = round(len(s1)/50)
 s1[N1:len(s1)] = 0
 slit1 = np.fft.irfft(s1)
 s2 = np.fft.rfft(I3)
-N2 = round(len(s2)/10)
+N2 = round(len(s2)/50)
 s2[N2:len(s2)] = 0
 slit2 = np.fft.irfft(s2)
 

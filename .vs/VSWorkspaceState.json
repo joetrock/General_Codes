@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Double Slit"
+    "\\Double Slit",
+    "\\Hall Effect"
   ],
-  "SelectedNode": "\\Double Slit\\Non-Pasco_script.py",
+  "SelectedNode": "\\Hall Effect\\stuff.py",
   "PreviewInSolutionExplorer": false
 }
