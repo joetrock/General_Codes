@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Double Slit",
-    "\\Hall Effect"
+    "\\Black Body",
+    "\\Double Slit"
   ],
-  "SelectedNode": "\\Hall Effect\\stuff.py",
+  "SelectedNode": "\\Black Body\\BB_Day2.py",
   "PreviewInSolutionExplorer": false
 }
